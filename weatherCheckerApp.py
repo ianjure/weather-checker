@@ -4,15 +4,14 @@ import requests
 import streamlit as st
 import base64
 import requests
-import twython
 from streamlit_lottie import st_lottie
 
 
 # API Resources Configuration
-API_KEY_WEATHER = twython(config.API_KEY_WEATHER)
+API_KEY_WEATHER = config.API_KEY_WEATHER
 URL_WEATHER = 'https://api.openweathermap.org/data/2.5/weather'
 
-API_KEY_TIME = twython(config.API_KEY_TIME)
+API_KEY_TIME = config.API_KEY_TIME
 URL_TIME = 'http://api.timezonedb.com/v2.1/get-time-zone'
 
 
