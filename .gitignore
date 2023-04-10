@@ -1,4 +1,4 @@
-config.py
+secrets.toml
 __pycache__/
 *.py[cod]
 *$py.class
