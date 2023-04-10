@@ -8,10 +8,10 @@ from streamlit_lottie import *
 
 
 # API Resources Configuration
-API_KEY_WEATHER = config.API_KEY_WEATHER
+API_KEY_WEATHER = '814db86ef343e43d2f8d27eafccefff1'
 URL_WEATHER = 'https://api.openweathermap.org/data/2.5/weather'
 
-API_KEY_TIME = config.API_KEY_TIME
+API_KEY_TIME = 'T1TX6255L8LU'
 URL_TIME = 'http://api.timezonedb.com/v2.1/get-time-zone'
 
 
