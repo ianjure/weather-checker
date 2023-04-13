@@ -2,7 +2,6 @@ import json
 import requests
 import streamlit as st
 import base64
-import requests
 from streamlit_lottie import *
 
 
@@ -16,7 +15,7 @@ URL_TIME = 'http://api.timezonedb.com/v2.1/get-time-zone'
 
 # Page Configuration
 st.set_page_config (
-    page_title = "Weather Checker App",
+    page_title = "Weather Checker",
     page_icon = ":partly_sunny:",
     initial_sidebar_state = "collapsed"
     )
