@@ -798,12 +798,5 @@ if check_button or (len(enter_city) != 0):
                     st.markdown(windy_fm, unsafe_allow_html = True)
                     st.markdown(f'<iframe width="350" height="350" src="https://embed.windy.com/embed2.html?lat={show_Latitude}&lon={show_Longitude}&detailLat={show_Latitude}&detailLon={show_Longitude}&width=650&height=450&zoom=11&level=surface&overlay=temp&product=ecmwf&menu=None&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=mph&metricTemp=%C2%B0F&radarRange=-1" frameborder="10"></iframe>', unsafe_allow_html = True)
                     st.image('misc/temp-hue.png')
-html_string = """
-<body>
-<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/949b1b89-889a-46d7-bdb0-c5acedc92717/webchat/config.js" 
-defer></script>
-</body>
-"""
-st.markdown(html_string, unsafe_allow_html = True)
+                    
 #Developed by Ian Jure Macalisang
