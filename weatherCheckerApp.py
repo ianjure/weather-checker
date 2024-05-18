@@ -15,28 +15,6 @@ URL_TIME = 'http://api.timezonedb.com/v2.1/get-time-zone'
 
 icon = Image.open("misc/logo.png")
 
-# Page Configuration
-st.set_page_config (
-    page_icon = icon,
-    initial_sidebar_state = "collapsed"
-    )
-
-hide_menu_style = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    div[data-testid="stDecoration"] {
-    visibility: hidden;
-    height: 0%;
-    position: fixed;
-    }
-    div[data-testid="stStatusWidget"] {
-    visibility: hidden;
-    height: 0%;
-    position: fixed;
-    }
-    </style>
-    """
 def set_page_title(title):
     st.sidebar.markdown(unsafe_allow_html=True, body=f"""
         <iframe height=0 srcdoc="<script>
@@ -61,7 +39,29 @@ def set_page_title(title):
         </script>" />
     """)
     
-set_page_title("My new title")
+# Page Configuration
+st.set_page_config (
+    page_title = set_page_title("My new title"),
+    page_icon = icon,
+    initial_sidebar_state = "collapsed"
+    )
+
+hide_menu_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    div[data-testid="stDecoration"] {
+    visibility: hidden;
+    height: 0%;
+    position: fixed;
+    }
+    div[data-testid="stStatusWidget"] {
+    visibility: hidden;
+    height: 0%;
+    position: fixed;
+    }
+    </style>
+    """
 
 st.markdown(hide_menu_style, unsafe_allow_html = True)
 
