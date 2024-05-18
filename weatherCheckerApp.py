@@ -17,7 +17,6 @@ icon = Image.open("misc/logo.png")
 
 # Page Configuration
 st.set_page_config (
-    page_title = "Weather Checker",
     page_icon = icon,
     initial_sidebar_state = "collapsed"
     )
