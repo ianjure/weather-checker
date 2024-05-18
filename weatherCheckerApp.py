@@ -14,34 +14,10 @@ API_KEY_TIME = st.secrets['API_KEY_TIME']
 URL_TIME = 'http://api.timezonedb.com/v2.1/get-time-zone'
 
 icon = Image.open("misc/logo.png")
-
-def set_page_title(title):
-    st.sidebar.markdown(unsafe_allow_html=True, body=f"""
-        <iframe height=0 srcdoc="<script>
-            const title = window.parent.document.querySelector('title') \
-                
-            const oldObserver = window.parent.titleObserver
-            if (oldObserver) {{
-                oldObserver.disconnect()
-            }} \
-
-            const newObserver = new MutationObserver(function(mutations) {{
-                const target = mutations[0].target
-                if (target.text !== '{title}') {{
-                    target.text = '{title}'
-                }}
-            }}) \
-
-            newObserver.observe(title, {{ childList: true }})
-            window.parent.titleObserver = newObserver \
-
-            title.text = '{title}'
-        </script>" />
-    """)
     
 # Page Configuration
 st.set_page_config (
-    page_title = set_page_title("My new title"),
+    page_title = Weather Checker,
     page_icon = icon,
     initial_sidebar_state = "collapsed"
     )
