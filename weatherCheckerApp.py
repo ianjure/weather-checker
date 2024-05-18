@@ -17,7 +17,7 @@ icon = Image.open("misc/logo.png")
 
 # Page Configuration
 st.set_page_config (
-    page_title = "WeatherCheck",
+    page_title = "Weather Checker",
     page_icon = icon,
     initial_sidebar_state = "collapsed"
     )
@@ -212,7 +212,7 @@ with c2:
     """, unsafe_allow_html = True)
 
     st_lottie(lottie_anim2, loop = True, quality = 'high', height = 100)
-    c2.markdown('<p class="big-font">WeatherCheck</p>', unsafe_allow_html = True)
+    c2.markdown('<p class="big-font">Weather Checker</p>', unsafe_allow_html = True)
 
     c2.markdown(links, unsafe_allow_html=True)
     streamlit_link = '<a href="https://www.streamlit.io">Streamlit</a>'
