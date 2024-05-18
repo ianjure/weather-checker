@@ -2,6 +2,7 @@ import json
 import requests
 import streamlit as st
 import base64
+from PIL import Image
 from streamlit_lottie import *
 
 
@@ -12,11 +13,12 @@ URL_WEATHER = 'https://api.openweathermap.org/data/2.5/weather'
 API_KEY_TIME = st.secrets['API_KEY_TIME']
 URL_TIME = 'http://api.timezonedb.com/v2.1/get-time-zone'
 
+icon = Image.open("misc/logo.png")
 
 # Page Configuration
 st.set_page_config (
-    page_title = "Weather Checker",
-    page_icon = ":partly_sunny:",
+    page_title = "WeatherChecker",
+    page_icon = icon,
     initial_sidebar_state = "collapsed"
     )
 
