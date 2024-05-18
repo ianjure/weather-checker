@@ -1,4 +1,4 @@
-# :partly_sunny: WeatherCheck
+# :partly_sunny: Weather Checker
 A Weather Checker Web App, made using Streamlit, OpenWeather API, and Windy.
 
 ## About
